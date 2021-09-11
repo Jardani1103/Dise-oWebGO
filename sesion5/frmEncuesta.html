@@ -7,13 +7,16 @@
     <title>Encuesta cinematográfica</title>
 </head>
 
-<body>
+<body style="background-color: rgb(170, 216, 235);">
     
 <div id="contenedor">
-<h2>Encuesta de cine: Nominadas al Oscar 2021</h2>
+<h2  style="color: darkblue;"><em>Encuesta de cine: Nominadas al Oscar 2021</em> </h2>
+
+<img src="img/oscar21.jpg" alt="right"  height="100px"  width="400px">
+
    <form id="formulario1" name="formulario1" method="POST" action="data.php">
-    <fieldset id="Datos personales">
-       <legend>Datos personales</legend>
+    <fieldset  style="border-color: black;" id="Datos personales">
+       <legend style="color: darkblue;"> <b>Datos personales</b> </legend>
        <label for="Nombre">Nombre</label> <br>
        <input type="text" name="Nombre" id="Nombre"> <br>
        <label for="Apellido">Apellido</label> <br>
@@ -34,12 +37,47 @@
 
 <br>
 
+<fieldset style="border-color: black;" id="Mejor Película"> 
+   <legend style="color: darkblue;"><b>Mejor Película</b></legend>
+   <input  type="radio"  name="rad1" value="11" > Suicie Squad<br>
+   <input type="radio" name="rad2" value="22"> Doctor Strange   <br>
+   <input type="radio" name="rad3" value="33"> Avenger Endgame  <br>
+</fieldset>
+
+ <br>  
+
+<fieldset style="border-color: black;" id="Selecciona las películas que no hayas visto">
+<legend style="color: rgb(112, 112, 145);"><b>Selecciona las películas que no hayas visto</b></legend>
+
+<label><input type="checkbox" name="cbo1" id="checkbox1">El Joker</label> <br>
+<label><input type="checkbox" name="cbo2" id="checkbox2">La mujer Maravilla</label> <br>
+<label><input type="checkbox" name="cbo3" id="checkbox3">Batman el caballero de la noche</label> <br>
+<label><input type="checkbox" name="cbo4" id="checkbox4">Iroman 2</label> <br>
+<label><input type="checkbox" name="cbo5" id="checkbox5">Justice League</label> <br>
+  
+</fieldset>
+
+<br>
+
+<fieldset style="color: darkblue;" id="Argumento de la Película que más te gusto">
+<legend><b>Argumento de la Película que más te gusto</b></legend>
+<textarea  style="border-color: black;"  name="Argumento" id="argumento" cols="300" rows="10"></textarea>
+</fieldset>
+
+<br>
+
 <div id="botones">
-<input type="reset" value="Borrar formulario">
-<input type="submit" value="Enviar">
+<input style="background-color: navajowhite;" type="reset" value="Borrar formulario">
+<input style="background-color: navajowhite;" type="submit" value="Enviar">
 </div>
 
    </form>
+
+
+
+
+
+
 
 </div>
 
