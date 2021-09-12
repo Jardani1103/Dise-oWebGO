@@ -1,0 +1,13 @@
+
+/*p{
+    background: red;
+}
+
+span{
+    background: blue;
+}
+*/
+p,strong{
+
+    border: 1px solid;
+}

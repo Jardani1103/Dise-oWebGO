@@ -1,0 +1,20 @@
+/* body {
+
+    color: blue;
+} */
+
+body{font-family: Arial; color: black;}
+
+h1{font-family: verdana;}
+
+p{color: red;}
+
+
+/*
+
+div,h1,h2{
+    font-size: 12px;
+    color: #81a61a
+}
+*/
+
