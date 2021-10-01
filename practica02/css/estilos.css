@@ -1,0 +1,209 @@
+
+body{
+    margin: 0;
+}
+.header{
+
+    background-color: cyan;
+    height: 160px;
+    padding: 20px;
+}
+.header img{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+    border: 2px solid;
+}
+
+.navegacion{
+    background-color: black;
+    color: white;
+    margin-top: -15px;
+    margin-bottom: -16px;
+    
+}
+
+.navegacion li{
+    display: inline-block;
+    border: 1px solid;
+    width: 300px;
+    height: 80px;
+    padding-top: 30px;
+    
+    
+}
+.navegacion a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.navegacion ul {
+    text-align: center;
+  
+}
+
+.grid {
+
+    display: grid;
+    grid-template-areas: "noticias menu";
+    grid-template-columns: 1fr 200px;
+
+}
+
+.noticias{
+
+    grid-area: noticias;
+    padding: 25px;
+
+
+}
+.menu{
+
+    grid-area: menu;
+    background-color: aquamarine;
+
+}
+.img-noticia{
+
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left: 10px;
+}
+.cajas{
+
+    background-color: aqua;
+    margin: 10px;
+}
+
+.pie_pagina_grid{
+
+    display: grid;
+    grid-template-areas: "footer1" "footer2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.footer1{
+
+    grid-area: footer1;
+    background-color: aqua;
+}
+
+.footer2{
+
+    grid-area: footer2;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.subseccion{
+
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.imagen_pie{
+
+    width: 150px;
+    border: 2px solid;
+    margin-top: 20px;
+   
+    
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+.proyecto_privado{
+
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.proyectos{
+    text-align: center;
+ 
+}
+
+.grid_contactanos{
+
+display: grid;
+grid-template-areas: "datos informacion";
+grid-template-columns: 1fr 400px;
+margin: -25px;
+
+}
+.datos{
+    grid-area: datos;
+    background-color: aquamarine ;
+    padding: 15px 25px ;
+}
+.informacion{
+    grid-area: informacion;
+    padding: 50px 80px;
+}
+
+form{
+   width: 100%;
+   padding: 25px;
+}
+
+form label{
+    display: inline-block;
+    width: 300px;
+}
+
+form input{
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+.celular{
+width: 15px;
+height: 15px;
+
+}
+.fijo{
+    width: 15px;
+    height: 15px;
+
+}
+.correo{
+    width: 15px;
+    height: 15px;
+}
+
+.direccion{
+
+    width: 15px;
+    height: 15px;
+}
+
+.facebook{
+    width: 15px;
+    height: 15px;
+}
+
+.WhatsApp{
+    width: 15px;
+    height: 15px;
+}
+
+.Instagram{
+    width: 15px;
+    height: 15px;
+}
+
+.Telegram{
+    width: 15px;
+    height: 15px;
+}

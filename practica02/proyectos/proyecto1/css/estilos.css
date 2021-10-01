@@ -1,0 +1,20 @@
+.datos{
+color: blue;
+
+}
+
+.cuerpo{
+    background-color: gainsboro;
+}
+
+.imagen {
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left: 10px;
+}
+
+.parrafo{
+    text-align: justify;
+}

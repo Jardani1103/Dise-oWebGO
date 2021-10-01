@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura Electrónica Entel</title>
+</head>
+
+<body>
+    
+ <h1 style="color:blue;"><em> ENTEL S.A</em></h1> <! --em sirve para marcar con énfasis las partes importantes de un texto -->
+
+<img src="imagenFactura/entel.png"  alig="right" height="100px" width="950px" >
+
+
+ <table bgcolor="#D9D9F3" border="5">
+ <caption style="color: darkgreen;" > <big><b>Factura Electrónica Detallada</b></big></caption>
+ <! --Inseretamos la cabecera de la tabla -->
+
+ <thead> <! --Iniciamos la cabecera -->
+    <tr>
+       <th colspan="5"> Entel S.A - Marzo 2021</th>
+       <! --Colspan, indica el número de columnas que ocupará la celda. Por defecto ocupa una sola columna -->
+    </tr>
+ </thead>
+       <! --Finaliza la cabecera -->
+
+  <! --Agregamos el pie de Tabla -->
+
+  <tfoot>
+   <tr>
+    <td  colspan="5"  style="font-size:15px"><em style="color: crimson;" > <b>Entel le informa que puede llamar al número gratuito 081-808080 
+      para cualquier duda o sugerencia que tenga acerca de esta factura o nuestros servicios </em></b> </td>
+   </tr>
+  </tfoot>
+  <! --Terminamos con el pie de página de la tabla -->
+
+  <! --Definimos el cuerpo de la tabla -->
+  <tbody>
+    <tr>
+      <th colspan="5">Detalle de cuotas</th>
+    </tr>
+     <tr>
+      <th>PERÍODO</th>
+      <th>CONCEPTO</th>
+      <th>IMPORTE</th>
+      <th colspan="2">DESCUENTO</th>
+     </tr>
+
+     <tr>
+       <td rowspan="3" style="text-align:center">01/03/19</td>
+       <td>Servicio de identificación de llamadas</td>
+       <td style="text-align:center">S/ 120.00</td>
+       <td colspan="2" style="text-align:center">0</td>
+     </tr>
+
+     <tr>
+      
+      <td>Línea individual</td>
+      <td style="text-align:center">S/ 140.00</td>
+      <td colspan="2" style="text-align:center">0</td>
+    </tr>
+
+    <tr>
+      
+      <td>Bono ciudad</td>
+      <td style="text-align:center">S/ 100.00</td>
+      <td colspan="2" style="text-align:center">0</td>
+    </tr>
+
+<tfoot>
+<tr>
+<td colspan="2">TOTAL:</td>
+<td colspan="3"  style="text-align:right"><b>s/360.00</b></td>
+</tr>
+</tfoot>
+    
+<tr>
+ <th colspan="5">Detalle de consumos</th>
+</tr>
+
+<tr>
+   <th>CONCEPTO</th>
+   <th>LLAMADAS</th>
+   <th>DURACIÓN</th>
+   <th>IMPORTE</th>
+   <th>DESCUENTO</th>
+</tr>
+
+<tr>
+  <td style="text-align: center;">Llamada internacional</td>
+  <td style="text-align: center;">23</td>
+  <td style="text-align: center;">10m 23s</td>
+  <td style="text-align: center;"> S/130.00</td>
+  <td style="text-align: center;">0</td>
+</tr>
+
+
+<tr>
+  <td style="text-align: center;">Llamada metropolitana</td>
+  <td style="text-align: center;">23</td>
+  <td style="text-align: center;">10m 23s</td>
+  <td style="text-align: center;">S/35.00</td>
+  <td style="text-align: center;">0</td>
+</tr>
+
+<tfoot>
+  <tr>
+  <td colspan="2">TOTAL:</td>
+  <td colspan="3"  style="text-align:right"><b>s/165.00</b></td>
+  </tr>
+  </tfoot>
+
+  </tbody>
+</table> 
+</body>
+
+</html>

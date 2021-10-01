@@ -1,0 +1,82 @@
+body {
+    
+    background-image: url("https://png.pngtree.com/background/20210716/original/pngtree-cute-dog-tiled-background-blue-bones-picture-image_1349649.jpg");
+}
+
+section {
+    display: grid;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 450px 1fr 450px;
+    grid-template-areas: "nav contenido servicios" "footer footer footer";
+}
+
+.encabezado {
+    margin: 50px;
+}
+
+.encabezado h2 {
+    color: red;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: gray;    
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: blue;
+}
+
+.servicios {
+    grid-area: servicios;
+    background-color: darkmagenta;
+    color: white;
+}
+
+.servicios h2 {
+    font-size: 35px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: darkslateblue;
+}
+
+.contenido-item {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contenido h2 {
+    font-size: 18px;
+}
+
+.img {
+    border: 1px solid;
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-right: 10px;
+}
+
+.item {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+}
+
+
