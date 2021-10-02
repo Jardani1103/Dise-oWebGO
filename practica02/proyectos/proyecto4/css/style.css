@@ -32,10 +32,13 @@ h3 {
 }
 
 .img {
-    width: 350px;
-    height: 200px;
+
     border: 1px solid;
     float: right;
+     margin-left: 30px;
+     margin-bottom: 30px;
+
+    
 }
 
 .fecha {
@@ -47,3 +50,14 @@ h3 {
     font-family: arial;
     font-size: 14px;
 }
+
+.parrafo{
+   text-align: justify;
+}
+
+.img img {
+
+    height: 250px;
+    width: 200px;
+}
+

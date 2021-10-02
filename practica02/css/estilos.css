@@ -127,6 +127,7 @@ body{
 
     display: inline-block;
     margin-left: 50px;
+    
 }
 
 .proyectos{
@@ -150,6 +151,10 @@ margin: -25px;
 .informacion{
     grid-area: informacion;
     padding: 50px 80px;
+    width: 400px;
+}
+.informacion li{
+    margin-left: -40px;
 }
 
 form{
@@ -206,4 +211,35 @@ height: 15px;
 .Telegram{
     width: 15px;
     height: 15px;
+}
+
+.etiqueta{
+    color: blue;
+}
+
+
+.noticia1{
+    margin-bottom: 60px;
+}
+
+.boton{
+
+   background-color: skyblue;
+}
+
+.imapro{
+
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-left: 40px;
+   
+}
+
+.boton{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    
 }

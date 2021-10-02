@@ -1,6 +1,8 @@
 body {
     
-    background-image: url("https://png.pngtree.com/background/20210716/original/pngtree-cute-dog-tiled-background-blue-bones-picture-image_1349649.jpg");
+    
+    background-image: url("imgVeterinaria/veterinaria.jpg");
+    
 }
 
 section {
@@ -78,5 +80,16 @@ section {
     text-align: center;
     color: white;
 }
+
+.parrafo{
+    text-align: justify;
+}
+
+.ima{
+    height: 85px;
+    width: 85px;
+}
+
+
 
 
