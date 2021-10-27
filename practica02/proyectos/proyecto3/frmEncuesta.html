@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,73 +9,73 @@
 </head>
 
 <body style="background-color: rgb(170, 216, 235);">
-    
-<div id="contenedor">
-<h2  style="color: darkblue;"><em>Encuesta de cine: Nominadas al Oscar 2021</em> </h2>
 
-<img src="img/oscar21.jpg" alt="right"  height="100px"  width="400px">
+    <div id="contenedor">
+        <h2 style="color: darkblue;"><em>Encuesta de cine: Nominadas al Oscar 2021</em> </h2>
 
-   <form id="formulario1" name="formulario1" method="POST" action="data.php">
-    <fieldset  style="border-color: black;" id="Datos personales">
-       <legend style="color: darkblue;"> <b>Datos personales</b> </legend>
-       <label for="Nombre">Nombre</label> <br>
-       <input type="text" name="Nombre" id="Nombre"> <br>
-       <label for="Apellido">Apellido</label> <br>
-       <input type="text" name="Apellido" id="Apellido"> <br>
-       <label for="Dni">Dni</label> <br>
-       <input type="text" name="Dni" id="Dni"> <br>
-       <label for="Edad">Edad</label> <br>
-       <input type="text" name="Edad" id="Edad"> <br>
-       <label for="Sexo">Sexo</label> <br>
-       <select id="sexo" name="sexo">
+        <img src="img/oscar21.jpg" alt="right" height="100px" width="400px">
+
+        <form id="formulario1" name="formulario1" method="POST" action="data.php">
+            <fieldset style="border-color: black;" id="Datos personales">
+                <legend style="color: darkblue;"> <b>Datos personales</b> </legend>
+                <label for="Nombre">Nombre</label> <br>
+                <input type="text" name="Nombre" id="Nombre"> <br>
+                <label for="Apellido">Apellido</label> <br>
+                <input type="text" name="Apellido" id="Apellido"> <br>
+                <label for="Dni">Dni</label> <br>
+                <input type="text" name="Dni" id="Dni"> <br>
+                <label for="Edad">Edad</label> <br>
+                <input type="text" name="Edad" id="Edad"> <br>
+                <label for="Sexo">Sexo</label> <br>
+                <select id="sexo" name="sexo">
 
         <option value="X" selected="selected">...</option>
         <OPtion value="M">Masculino</OPtion>
         <OPtion value="F">Femenino</OPtion>
-
+         
        </select>
-    </fieldset> 
+            </fieldset>
 
-<br>
+            <br>
 
-<fieldset style="border-color: black;" id="Mejor Película"> 
-   <legend style="color: darkblue;"><b>Mejor Película</b></legend>
-   <input  type="radio"  name="rad1" value="11" > Suicie Squad<br>
-   <input type="radio" name="rad2" value="22"> Doctor Strange   <br>
-   <input type="radio" name="rad3" value="33"> Avenger Endgame  <br>
-</fieldset>
+            <fieldset style="border-color: black;" id="Mejor Película">
+                <legend style="color: darkblue;"><b>Mejor Película</b></legend>
+                <input type="radio" name="rad1" value="11"> Suicie Squad<br>
+                <input type="radio" name="rad2" value="22"> Doctor Strange <br>
+                <input type="radio" name="rad3" value="33"> Avenger Endgame <br>
+            </fieldset>
 
- <br>  
+            <br>
 
-<fieldset style="border-color: black;" id="Selecciona las películas que no hayas visto">
-<legend style="color: rgb(112, 112, 145);"><b>Selecciona las películas que no hayas visto</b></legend>
+            <fieldset style="border-color: black;" id="Selecciona las películas que no hayas visto">
+                <legend style="color: rgb(112, 112, 145);"><b>Selecciona las películas que no hayas visto</b></legend>
 
-<label><input type="checkbox" name="cbo1" id="checkbox1">El Joker</label> <br>
-<label><input type="checkbox" name="cbo2" id="checkbox2">La mujer Maravilla</label> <br>
-<label><input type="checkbox" name="cbo3" id="checkbox3">Batman el caballero de la noche</label> <br>
-<label><input type="checkbox" name="cbo4" id="checkbox4">Iroman 2</label> <br>
-<label><input type="checkbox" name="cbo5" id="checkbox5">Justice League</label> <br>
-  
-</fieldset>
+                <label><input type="checkbox" name="cbo1" id="checkbox1">El Joker</label> <br>
+                <label><input type="checkbox" name="cbo2" id="checkbox2">La mujer Maravilla</label> <br>
+                <label><input type="checkbox" name="cbo3" id="checkbox3">Batman el caballero de la noche</label> <br>
+                <label><input type="checkbox" name="cbo4" id="checkbox4">Iroman 2</label> <br>
+                <label><input type="checkbox" name="cbo5" id="checkbox5">Justice League</label> <br>
 
-<br>
+            </fieldset>
 
-<fieldset style="color: darkblue;" id="Argumento de la Película que más te gusto">
-<legend><b>Argumento de la Película que más te gusto</b></legend>
-<textarea  style="border-color: black;"  name="Argumento" id="argumento" cols="190" rows="10"></textarea>
-</fieldset>
+            <br>
 
-<br>
+            <fieldset style="color: darkblue;" id="Argumento de la Película que más te gusto">
+                <legend><b>Argumento de la Película que más te gusto</b></legend>
+                <textarea style="border-color: black;" name="Argumento" id="argumento" cols="190" rows="10"></textarea>
+            </fieldset>
 
-<div id="botones">
-<input style="background-color: navajowhite;" type="reset" value="Borrar formulario">
-<input style="background-color: navajowhite;" type="submit" value="Enviar">
-</div>
+            <br>
 
-   </form>
+            <div id="botones">
+                <input style="background-color: navajowhite;" type="reset" value="Borrar formulario">
+                <input style="background-color: navajowhite;" type="submit" value="Enviar">
+            </div>
+
+        </form>
 
 
-</div>
+    </div>
 
 </body>
 

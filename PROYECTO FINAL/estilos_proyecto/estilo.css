@@ -1,0 +1,127 @@
+.pagInicio {
+    width: 800px;
+    height: 200px;
+}
+
+.icono_cabecera {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    margin-left: 200px;
+}
+
+.imagen {
+    width: 70px;
+    height: 70px;
+    margin-left: 220px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.boton {
+    margin-left: 220px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.caja {
+    display: inline-block;
+}
+
+.secciones {
+    text-align: center;
+}
+
+.navegador {
+    background-color: floralwhite;
+    color: white;
+    margin-top: -15px;
+    margin-bottom: -16px;
+    border: black;
+}
+
+.navegador li {
+    display: inline-block;
+    border: 1px solid;
+    width: 170px;
+    height: 80px;
+    padding-top: 20px;
+}
+
+.navegador a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.navegador ul {
+    text-align: center;
+}
+
+.img_disco {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+
+/* computo */
+
+.imagenes-computo {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 40px;
+}
+
+.cajita {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.imagen_lupa {
+    height: 50px;
+}
+
+.cajita2 {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.impresoras {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 40px;
+}
+
+.imgImp {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.imgComp {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.cajita3 {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.imgSW {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.software {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 40px;
+}
