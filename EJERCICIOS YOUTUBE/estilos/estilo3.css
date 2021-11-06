@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header {
+    background-color: darkblue;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    /*pra poner en linea */
+    margin-right: 40px;
+    list-style: none;
+    /*para quitar puntos */
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    /*para que dos palabras no se corten o separen */
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color: tomato;
+    transition: .5s;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* body {
+        background-color: red;
+    }*/
+    body {
+        padding-top: 70px;
+    }
+    .header {
+        height: 60px;
+    }
+    .logo {
+        font: 25px;
+        font-weight: bold;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        /*pra poner en linea */
+        margin-right: 20px;
+        background-color: sandybrown;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item {
+        line-height: 70px;
+    }
+    .nav-menu-lin {
+        padding: 8px 12px;
+        border-radius: 3px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: cornflowerblue;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-meu_visible {
+        left: 0;
+    }
+}

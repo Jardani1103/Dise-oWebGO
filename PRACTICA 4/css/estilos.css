@@ -1,0 +1,91 @@
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    .logo {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .titulo h1 {
+        margin-bottom: 50px;
+        margin-right: 350px;
+        position: absolute;
+        top: 110px;
+        left: 360px;
+        font-size: 80px;
+    }
+    
+    .imagen1 {
+        width: 80px;
+        height: 80px;
+        margin: 0 50px;
+        float: right;
+        margin-top: -190px;
+        border-style: solid;
+    }
+    
+    .imagen2 {
+        width: 80px;
+        height: 80px;
+        margin-right: 220px;
+        float: right;
+        margin-top: -190px;
+        display: inline;
+    }
+    
+    .cabecera {
+        background-color: aqua;
+        height: 300px;
+    }
+    
+    .list-group li {
+        width: 300px;
+        height: 70px;
+    }
+    
+    .carousel-inner img {
+        width: 150px;
+        height: 500px;
+        margin: auto;
+    }
+    
+    .menu2 {
+        margin: 0 50px;
+        float: right;
+        margin-top: -190px;
+    }
+    
+    .redes {
+        width: 20px;
+        height: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li,
+    h5 {
+        text-align: justify;
+        font-size: 20px;
+    }
+    
+    #carrusel {
+        margin-top: -300px;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-left: 300px;
+    }
+    
+    div div ul {
+        margin-left: -95px;
+    }
+    
+    .secciones {
+        margin-right: -500px;
+    }

@@ -1,0 +1,62 @@
+#contenedor {
+    width: 1000px;
+    margin: auto;
+    background-color: paleturquoise;
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span {
+    width: 100px;
+    display: block;
+    float: left;
+    padding-left: 4px;
+    top: 20px;
+}
+
+.nom {
+    background-color: darkgray;
+}
+
+.titu {
+    background-color: #0df39b;
+}
+
+li {
+    list-style: none;
+    margin-top: 1px;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.datosEmail {
+    width: 350px;
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.imagenAgenda {
+    width: 100px;
+    height: 100px;
+    margin-left: 800px;
+    margin-top: -600px;
+    top: 60px;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: lightseagreen;
+    transition: 0.3s;
+}
+
+.boton {
+    height: 30px;
+    margin-left: 20px;
+    font-size: 15px;
+}

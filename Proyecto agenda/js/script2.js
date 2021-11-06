@@ -1,36 +1,23 @@
 function guardarDato() {
     var nombre = document.getElementById("nombre").value;
     var movil = document.getElementById("movil").value;
-    var email = document.getElementById("email").value;
-
-    const datos = {
-        'movil': movil,
-        'email': email,
-    };
-
-    localStorage.setItem(nombre, JSON.stringify(datos));
-
+    localStorage.setItem(nombre, movil)
     document.getElementById("nombre").value = "";
     document.getElementById("movil").value = "";
-    document.getElementById("email").value = "";
     actualizarDatos();
 }
 
-
 function recuperarDato() {
     var nombre = document.getElementById("nombre").value;
-
-    let datos = localStorage.getItem(nombre);
-    datos = JSON.parse(datos);
-
-    document.getElementById("movil").value = datos.movil;
-    document.getElementById("email").value = datos.email;
+    localStorage.getItem(nombre);
+    var nombre = document.getElementById("nombre").value = localStorage.getItem(nombre);
 }
 
 function eliminarDato() {
     var nombre = document.getElementById("nombre").value;
     localStorage.removeItem(nombre);
     actualizarDatos();
+
 }
 
 function eliminarTodo() {
@@ -41,17 +28,13 @@ function eliminarTodo() {
 function actualizarDatos() {
     var registro = "";
     if (localStorage.length === 0) {
-        registro += '<li>Vacío</li>';
+        registro += '<li>Vacio</li>';
     } else {
         for (var i = 0; i <= localStorage.length - 1; i++) {
-            var key = localStorage.key(i);
-            let datos = localStorage.getItem(key);
-            datos = JSON.parse(datos);
+            var Key = localStorage.key(i);
 
-            registro += `<li> 
-            <span class="nom"> ${key} </span>
-            <span class="nom"> ${datos.movil}</span>
-            <span class="nom datosEmail"> ${datos.email}</span></li><br>`;
+            registro += '<li>' + '<span class="nom">' + key + '</span>' +
+                '<span class="nom">' + localStorage.getItem(key) + '</span>' + '</li><br>';
         }
     }
     document.getElementById('contactos').innerHTML = registro;

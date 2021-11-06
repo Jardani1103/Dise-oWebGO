@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.encabezado,
+.secciones {
+    background-color: white;
+}
+
+.encabezado nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.encabezado nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 12px 20px;
+    display: block;
+}
+
+a:hover {
+    background-color: rgb(1, 65, 136);
+}
+
+.encabezado nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: cornflowerblue;
+    display: none;
+}
+
+
+/*
+.encabezado nav ul li ul li {
+    width: 180px;
+    position: relative;
+}
+*/
+
+.encabezado nav ul li:hover>ul {
+    display: block;
+}
+
+.logo {
+    height: 180px;
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+
+.logoPrincipal {
+    background-color: rgb(1, 65, 136);
+    height: 200px;
+}
+
+.imagen {
+    width: 50px;
+    height: 60px;
+    margin-left: 90px;
+    border: 0;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: fixed;
+    margin-top: 15px;
+}
+
+.boton {
+    margin-left: 220px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    background-color: white;
+    border: 0;
+}
+
+.caja {
+    display: inline-block;
+}
+
+.secciones {
+    text-align: center;
+}
+
+.busqueda {
+    border-radius: 10px;
+    size: 60;
+}
+
+.imagen_lupa {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.letra {
+    font-size: 15px bold;
+}
