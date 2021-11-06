@@ -124,3 +124,11 @@ a {
     text-decoration: none;
     font-size: 25px;
 }
+
+.bloque1 {
+    margin-left: 200px;
+}
+
+.card-text {
+    text-align: justify;
+}
