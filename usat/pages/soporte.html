@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Servi3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=1.4">
+    <link rel="stylesheet" href="../css/bootstrap-icons.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row text-center cabecera">
+            <a href="../index.html"><img src="../img/servi3 blnco.png" alt="servi3" class="imagen"></a>
+        </div>
+        <div class="row navegador-1">
+            <div class="col-md-6 col-12 position-relative border border-bottom-primary">
+                <div class="row position-absolute top-50 start-50 translate-middle w-75">
+                    <div class="col-md-8 col-10 pt-1">
+                        <input type="search" class="form-control rounded-pill" placeholder="Buscar en nuestro catalogo">
+                    </div>
+                    <div class="col-md-4 col-2 text-left">
+                        <a href="#"><i class="bi bi-search icon-custom"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 position-relative navegador-1-xs">
+                <div class="row position-absolute top-50 start-50 translate-middle w-100 navegador-2">
+                    <div class="col-4 text-center">
+                        <a href="orden.html" class="text-decoration-none text-dark"><i
+                                class="bi bi-box-seam icon-custom"></i>
+                            <br><label class="icon-xs">Mis ordenes</label></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="sesion.html" class="text-decoration-none text-dark"><i
+                                class="bi bi-person icon-custom"></i>
+                            <br><label class="icon-xs">Iniciar Sesión</label></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="carrito.html" class="text-decoration-none text-dark"><i
+                                class="bi bi-cart icon-custom"></i> <span id="contador-productos" 
+                                class="badge bg-secondary rounded-pill">0</span><br><label class="icon-xs">Carrito de
+                                Compras</label></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler btn-menu-xs" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav w-100 text-center">
+                            <li class="nav-item dropdown menu-li rounded-start">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarMenuComputo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cómputo</a>
+                                <ul class="dropdown-menu w-100 text-center p-0" aria-labelledby="navbarMenuComputo">
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="../index.html">Discos Duros</a></li>
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="#">Pantalla</a></li>
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="#">Mouse</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active dropdown-toggle" href="#">Redes</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active dropdown-toggle" href="#">Impresoras</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active dropdown-toggle" href="#">Software</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li rounded-start">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarMenuLaptops" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pc y Laptops</a>
+                                <ul class="dropdown-menu w-100 text-center p-0" aria-labelledby="navbarMenuLaptops">
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="cat-laptops.html">Laptops</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active" href="soporte.html">Soporte Técnico</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li rounded-end">
+                                <a class="nav-link active" href="contacto.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="cuerpo p-5">
+            <div class="row">
+                <label class="h4 text-center pb-4 label-xs">Soporte</label>
+                <div class="col-md-3"></div>
+                <div class="col-md-3 col-12">
+                    <img src="../img/iconosServi3/soporte1.jpg" class="card-img-top image-size" alt="disco_duro_1">
+                </div>
+                <div class="row col-md-3 col-12 p-0 pt-5-xs">
+                    <div class="row pb-2 text-justify">
+                        <p>Soporte tecnológico dde laptops, desktop, impresoras matriciales, multifuncionales.</p>
+                    </div>
+                    <div class="row pb-2 text-justify">
+                        <p>Mantenimiento preventivo y correctivo, backup de datos, formateo, instalación y configuración de software.</p>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <img src="../img/iconosServi3/soporte2.jpg" class="card-img-top image-size img-none" alt="disco_duro_1">
+                </div>
+                <div class="row col-md-3 col-12 p-0">
+                    <div class="row pb-2 text-justify pt-5-xs">
+                        <p>Instalación de cámaras de seguridad análogas, digitales, tecnología PTZ, gran variedad de productos y soluciones.</p>
+                    </div>
+                    <div class="row pb-2 text-justify pt-5-xs">
+                        <p>Con nuestro servicio de mantenimiento preventivo se garantiza una operación continua y confiable de su sitema de seguridad.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 p-5 pb-xs">
+                    <img src="../img/iconosServi3/soporte2.jpg" class="card-img-top image-size img-block" alt="disco_duro_1">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row position-absolute top-50 start-50 translate-middle w-100">
+                <div class="col-md-1 col-1" style="height: 10px;"></div>
+                <div class="col-md-3 col-12 block-footer-1">
+                    <h5>Nuestros Productos</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="../index.html">Computo</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">Redes</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">Impresoras</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">Software</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="cat-laptops.html">Pc y Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 block-footer-2">
+                    <h5>Nosotros</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="nosotros.html">¿Quiénes Somos?</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="nosotros.html">Visión</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="nosotros.html">Misión</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 block-footer-3">
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-whatsapp icon-custom-small"></i> 988 208 688</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-telephone icon-custom-small"></i> 074 - 619879</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-envelope icon-custom-small"></i> servi3.cix@gmail.com</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-geo-alt icon-custom-small"></i> Cl. Manco Inca 937 - La victoria,
+                                Chiclayo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 block-footer-4">
+                    <h5>Mi Cuenta</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="sesion.html">Registrate</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="sesion.html">Iniciar Sesión</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="sesion.html">Recuperar Contraseña</a>
+                        </li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">© 2021 - Grupo 02 Diseño Web 2021-II</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1 col-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

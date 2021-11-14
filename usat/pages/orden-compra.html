@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Servi3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=1.4">
+    <link rel="stylesheet" href="../css/bootstrap-icons.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/main.js?v=1.3"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row text-center cabecera">
+            <a href="../index.html"><img src="../img/servi3 blnco.png" alt="servi3" class="imagen"></a>
+        </div>
+        <div class="row navegador-1">
+            <div class="col-md-6 col-12 position-relative border border-bottom-primary">
+                <div class="row position-absolute top-50 start-50 translate-middle w-75">
+                    <div class="col-md-8 col-10 pt-1">
+                        <input type="search" class="form-control rounded-pill" placeholder="Buscar en nuestro catalogo">
+                    </div>
+                    <div class="col-md-4 col-2 text-left">
+                        <a href="#"><i class="bi bi-search icon-custom"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 position-relative navegador-1-xs">
+                <div class="row position-absolute top-50 start-50 translate-middle w-100 navegador-2">
+                    <div class="col-4 text-center">
+                        <a href="orden.html" class="text-decoration-none text-dark"><i
+                                class="bi bi-box-seam icon-custom"></i>
+                            <br><label class="icon-xs">Mis ordenes</label></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="sesion.html" class="text-decoration-none text-dark"><i
+                                class="bi bi-person icon-custom"></i>
+                            <br><label class="icon-xs">Iniciar Sesión</label></a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="carrito.html" class="text-decoration-none text-dark"><i
+                                class="bi bi-cart icon-custom"></i> <span id="contador-productos"
+                                class="badge bg-secondary rounded-pill">0</span><br><label class="icon-xs">Carrito de
+                                Compras</label></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler btn-menu-xs" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav w-100 text-center">
+                            <li class="nav-item dropdown menu-li rounded-start">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarMenuComputo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cómputo</a>
+                                <ul class="dropdown-menu w-100 text-center p-0" aria-labelledby="navbarMenuComputo">
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="../index.html">Discos Duros</a></li>
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="#">Pantalla</a></li>
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="#">Mouse</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active dropdown-toggle" href="#">Redes</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active dropdown-toggle" href="#">Impresoras</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active dropdown-toggle" href="#">Software</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li rounded-start">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarMenuLaptops" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pc y Laptops</a>
+                                <ul class="dropdown-menu w-100 text-center p-0" aria-labelledby="navbarMenuLaptops">
+                                    <li class="menu-li w-100"><a class="dropdown-item nav-link text-dark" href="cat-laptops.html">Laptops</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active" href="soporte.html">Soporte Técnico</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li">
+                                <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown menu-li rounded-end">
+                                <a class="nav-link active" href="contacto.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="cuerpo">
+            <div class="row">
+                <div class="col-md-12 pb-4">
+                    <div class="row">
+                        <div class="col-md-10 text-center"><label class="h4 label-xs">Carrito de Compras</label></div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-danger w-100" onclick="nueva_compra()">NUEVA COMPRA</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row pb-2">
+                        <div class="col-md-12 col-12">
+                            <table class="table table-responsive table-bordered text-center table-custom">
+                                <thead class="color-footer">
+                                    <!-- <th class="w-20">IMAGEN</th> -->
+                                    <th class="w-50">NOMBRE DEL PRODUCTO</th>
+                                    <th class="w-10">PRECIO X UNID.</th>
+                                    <th class="w-10">CANT.</th>
+                                    <th class="w-10">SUBTOTAL.</th>
+                                </thead>
+                                <tbody id="table_carrito">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <div class="row">
+                                <div class="col-md-6 border border-dark p-4 color-footer">
+                                    <label class="form-label fw-bold">Seleccione Medio de Pago</label>
+                                    <div class="row mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tarjeta" id="tarjeta_1">
+                                            <label class="form-check-label" for="tarjeta_1">
+                                                Tarjeta Visa
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tarjeta" id="tarjeta_2" checked>
+                                            <label class="form-check-label" for="tarjeta_2">
+                                                Tarjeta Mastercard
+                                            </label>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tipo_pago" id="tipo_pago_1">
+                                            <label class="form-check-label" for="tipo_pago_1">
+                                                Deposito
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tipo_pago" id="tipo_pago_2" checked>
+                                            <label class="form-check-label" for="tipo_pago_2">
+                                                Transferencia
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="form-label fw-bold">Seleccione Comprobante de Pago</label>
+                                    <div class="pb-3">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="comprobante_pago" id="cp_1" value="">
+                                            <label class="form-check-label" for="cp_1">Factura</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="comprobante_pago" id="cp_2" value="">
+                                            <label class="form-check-label" for="cp_2">Boleta</label>
+                                        </div>
+                                    </div>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Nombre completo / Razon Social</label>
+                                        <input class="form-control form-control-sm" type="text" name="razon_social" id="razon_social" value="">
+                                    </div>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">DNI / RUC</label>
+                                        <input class="form-control form-control-sm" type="text" name="dni" id="dni" value="">
+                                    </div>
+                                    <label class="form-label fw-bold">Seleccione Metodo de Despacho</label>
+                                    <div class="pb-3">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="metodo_despacho" id="md_1" value="">
+                                            <label class="form-check-label" for="md_1">Envio a Domicilio</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="metodo_despacho" id="md_2" value="">
+                                            <label class="form-check-label" for="md_2">Retiro en tienda</label>
+                                        </div>
+                                    </div>
+                                    <label class="form-label fw-bold">Terminos y condiciones</label>
+                                    <div class="pb-3">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="terminos_condiciones" id="terminos_condiciones" value="">
+                                            <label class="form-check-label" for="terminos_condiciones">Aceptar Nuestros
+                                                Terminos y condiciones</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 border border-dark p-4 color-footer">
+                                    <label class="form-label fw-bold">Dirección de Envio</label>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Departamento</label>
+                                        <select class="form-select form-select-sm" aria-label="Default select example">
+                                            <option selected>Lambayeque</option>
+                                        </select>
+                                    </div>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Provincia</label>
+                                        <select class="form-select form-select-sm" aria-label="Default select example">
+                                            <option selected>Chiclayo</option>
+                                        </select>
+                                    </div>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Distrito</label>
+                                        <select class="form-select form-select-sm" aria-label="Default select example">
+                                            <option selected>La Victoria</option>
+                                        </select>
+                                    </div>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Direccion</label>
+                                        <input class="form-control form-control-sm" type="text" name="direccion" id="direccion" value="">
+                                    </div>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Referencia</label>
+                                        <input class="form-control form-control-sm" type="text" name="referencia" id="referencia" value="">
+                                    </div>
+                                    <label class="form-label fw-bold">Datos de Quien Recibe</label>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Nombre completos</label>
+                                        <input class="form-control form-control-sm" type="text" name="nombre_recibe" id="nombre_recibe" value="">
+                                    </div>
+                                    <div class="pb-3">
+                                        <label class="form-label fw-bold">Numero de Documento de Identidad</label>
+                                        <input class="form-control form-control-sm" type="text" name="documento_recibe" id="documento_recibe" value="">
+                                    </div>
+                                    <div class="pb-3 text-center">
+                                        <button onclick="agregar_total_compra()" class="btn btn-sm btn-primary-custom" data-bs-toggle="modal" data-bs-target="#proceder-compra">PROCEDER CON LA COMPRA</button>
+                                    </div>
+
+                                    <div class="modal fade" id="proceder-compra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header color-footer">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body color-footer">
+                                                    <div class="col-md-12 text-center cabecera">
+                                                        <img src="../img/servi3 blnco.png" class="imagen w-100">
+                                                    </div>
+                                                    <div class="col-md-12 pt-3">
+                                                        <div class="pb-3 row">
+                                                            <div class="col-md-12">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text bg-white"><i
+                                                                            class="bi bi-credit-card-fill"></i></span>
+                                                                    <input type="text" class="form-control" placeholder="XXX-XXX-XXX-XXX">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-3 row">
+                                                            <div class="col-md-6 col-12 mt-3-xs">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text bg-white"><i
+                                                                            class="bi bi-calendar-minus-fill"></i></span>
+                                                                    <input type="date" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text fw-bold bg-white">CVV</span>
+                                                                    <input type="text" class="form-control" placeholder="XXX">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-3 row">
+                                                            <div class="col-md-6">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text bg-white"><i
+                                                                            class="bi bi-person-fill"></i></span>
+                                                                    <input type="text" class="form-control" placeholder="Joe">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text fw-bold bg-white"><i
+                                                                            class="bi bi-person-fill"></i></span>
+                                                                    <input type="text" class="form-control" placeholder="Doe">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-3 row">
+                                                            <div class="col-md-12">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text fw-bold bg-white"><i
+                                                                            class="bi bi-envelope-fill"></i></span>
+                                                                    <input type="email" class="form-control" placeholder="Joe@gmail.com">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-3 row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="recordar_tarjeta">
+                                                                    <label class="form-check-label" for="recordar_tarjeta">Recordar Tarjeta</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-3 row">
+                                                            <div class="col-md-3"></div>
+                                                            <div class="col-md-6">
+                                                                <button class="btn btn-sm btn-primary-custom w-100 fw-bold" onclick="enviarPago()">PAGAR S/ <label for="#" id="pago_total">250</label></button>
+                                                            </div>
+                                                            <div class="col-md-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="color-footer px-0">
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-6"><img src="../img/iconosServi3/if-visa-2593666_86609.png" class="w-100 h-75"></div>
+                                                        <div class="col-md-3 col-6"><img src="../img/iconosServi3/americanexpress_82060.png" class="w-100 h-75"></div>
+                                                        <div class="col-md-3 col-6"><img src="../img/iconosServi3/Mastercard_icon-icons.com_60554.png" class="w-100 h-75"></div>
+                                                        <div class="col-md-3 col-6"><img src="../img/iconosServi3/din.png" class="w-100 h-75"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-destacado">
+                        <label class="fw-bold pb-4">Productos destacados</label>
+                        <div class="col-md-2 col-6 text-center">
+                            <div class="card image-size-sm">
+                                <a href="#"><img src="../img/iconosServi3/horizontal1.png" class="card-img-top" alt="disco_duro_1"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-center">
+                            <div class="card image-size-sm">
+                                <a href="#"><img src="../img/iconosServi3/horizontal2.png" class="card-img-top" alt="disco_duro_2"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-center">
+                            <div class="card image-size-sm">
+                                <a href="#"><img src="../img/iconosServi3/horizontal3.png" class="card-img-top" alt="disco_duro_3"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-center">
+                            <div class="card image-size-sm">
+                                <a href="#"><img src="../img/iconosServi3/horizontal4.png" class="card-img-top" alt="disco_duro_4"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-center">
+                            <div class="card image-size-sm">
+                                <a href="#"><img src="../img/iconosServi3/horizontal5.png" class="card-img-top" alt="disco_duro_5"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-center">
+                            <div class="card image-size-sm">
+                                <a href="#
+                                "><img src="../img/iconosServi3/horizontal6.png" class="card-img-top" alt="disco_duro_6"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row position-absolute top-50 start-50 translate-middle w-100">
+                <div class="col-md-1 col-1" style="height: 10px;"></div>
+                <div class="col-md-3 col-12 block-footer-1">
+                    <h5>Nuestros Productos</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="../index.html">Computo</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">Redes</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">Impresoras</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">Software</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="cat-laptops.html">Pc y Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 block-footer-2">
+                    <h5>Nosotros</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="nosotros.html">¿Quiénes Somos?</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="nosotros.html">Visión</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="nosotros.html">Misión</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 block-footer-3">
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-whatsapp icon-custom-small"></i> 988 208 688</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-telephone icon-custom-small"></i> 074 - 619879</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-envelope icon-custom-small"></i> servi3.cix@gmail.com</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="contacto.html"><i
+                                    class="bi bi-geo-alt icon-custom-small"></i> Cl. Manco Inca 937 - La victoria,
+                                Chiclayo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 block-footer-4">
+                    <h5>Mi Cuenta</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="sesion.html">Registrate</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="sesion.html">Iniciar Sesión</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="sesion.html">Recuperar Contraseña</a>
+                        </li>
+                        <li class="mb-1"><a class="text-decoration-none text-dark" href="#">© 2021 - Grupo 02 Diseño Web 2021-II</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-1 col-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
